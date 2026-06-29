@@ -21,12 +21,10 @@ jobs:
           cache-dependency-path: package-lock.json  # ✅ fixed
 
       # ─── Build ───────────────────────────────────────────────────
-      - name: Install dependencies
-        working-directory: hotel-booking-ui                           # ✅ fixed
+      - name: Install dependencies                         # ✅ fixed
         run: npm ci
 
-      - name: Build React app
-        working-directory: hotel-booking-ui                           # ✅ fixed
+      - name: Build React app                        # ✅ fixed
         run: npm run build
         env:
           VITE_CLERK_PUBLISHABLE_KEY: ${{ secrets.VITE_CLERK_PUBLISHABLE_KEY }}  # ✅ fixed
