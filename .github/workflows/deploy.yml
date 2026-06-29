@@ -2,10 +2,9 @@
 name: Build and Deploy React App
 on:
   push:
-    branches:
-      - main
+    branches: [main]
     paths:
-      - 'hotel-booking-ui/**'
+      - "hotel-booking-ui/**"
 
 jobs:
   deploy:
