@@ -39,7 +39,7 @@ jobs:
 
       - name: Upload build to S3
         run: |
-          tar -czf react-build.tar.gz -C hotel-booking-ui/dist .     # ✅ fixed — Vite outputs to dist/
+          tar -czf react-build.tar.gz -C dist .     # ✅ fixed — Vite outputs to dist/
           aws s3 cp react-build.tar.gz s3://my-terraform-state-bucket-aruna451/react-build.tar.gz
 
       # ─── Deploy to EC2 via SSM ───────────────────────────────────
