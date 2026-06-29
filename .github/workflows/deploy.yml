@@ -18,7 +18,7 @@ jobs:
         with:
           node-version: '22'
           cache: 'npm'
-          cache-dependency-path: hotel-booking-ui/package-lock.json  # ✅ fixed
+          cache-dependency-path: package-lock.json  # ✅ fixed
 
       # ─── Build ───────────────────────────────────────────────────
       - name: Install dependencies
