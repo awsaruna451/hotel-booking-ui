@@ -1,6 +1,5 @@
 # .github/workflows/deploy.yml
 name: Build and Deploy React App
-
 on:
   push:
     branches:
